@@ -1,6 +1,5 @@
 .intro{
-    width: 100vh;
-    max-width: 74rem;
+    width: auto;
     height: 70vh;
     display: flex;
     align-items: center;
