@@ -1,0 +1,38 @@
+#contactPage{
+    max-height: calc(100vh-4rem);
+    max-width: 60rem;
+    width: 100vw;
+    margin: 5rem auto;
+    text-align: center;
+}
+.contactPageTitle{
+    margin-top: 1.5rem;;
+    padding:  1rem;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.link{
+    padding: 0.65rem;
+    margin-top: 4rem ;
+    margin-bottom: 2rem;
+    color: rgb(201, 172, 201);
+}
+.link:hover{
+
+    filter: drop-shadow(1px 1px 5px rgb(245, 5, 197)) ;
+
+}
+
+hr {
+    
+    width:30%;
+    margin: auto;
+    box-shadow: 1px 2px 20px 2px  rgb(238, 180, 253);
+}
+hr:hover{
+    box-shadow: 1px 1px 10px 5px  rgb(102, 101, 176);
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.Navbar{
+    
+    height: 5rem;
+    width: 60%;
+    max-width: 55rem;
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    font-weight: 200;
+    font-size: medium;
+}
+.desktopMenu{
+    margin-left: auto;
+    display: flex;
+    background-color: rgba(40, 38, 42, 0.279);
+    border-style:solid ;
+    border-width: 1px;
+    border-radius: 2rem;
+    border-spacing:25px;
+    filter: drop-shadow(1px 0px 3px rgb(134, 134, 145)) ;
+    padding-left: 5px ;
+    padding-right: 5px;
+    background: linear-gradient(to bottom, rgba(7, 5, 5, 0.4) 0%,rgba(73, 51, 132, 0.221) 100%); 
+    backdrop-filter: blur(9px);
+}
+.desktopMenuListItem{
+    margin: 0.4rem;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+
+}
+.desktopMenuListItem:hover{
+    color:rgb(250, 209, 255);
+    padding-bottom: 0.5rem;
+    filter: drop-shadow(1px 1px 5px rgb(88, 18, 227)) ;
+
+}
+
