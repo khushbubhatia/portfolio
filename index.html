@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khushbu Bhatia | Product Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f8;--surface:#fff;--ink:#12242b;--muted:#53666e;--line:#d5dde0;--accent:#1d4fd7;--accent-ink:#fff;--tag:#e6ecf8;--ok:#1b7a43;--bad:#b3261e;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1f;--surface:#16252c;--ink:#e8eef0;--muted:#9bb0b8;--line:#2a3d45;--accent:#7ea2ff;--accent-ink:#0f1a1f;--tag:#1f3140;--ok:#62c48a;--bad:#ff8a80;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a1f;--surface:#16252c;--ink:#e8eef0;--muted:#9bb0b8;--line:#2a3d45;--accent:#7ea2ff;--accent-ink:#0f1a1f;--tag:#1f3140;--ok:#62c48a;--bad:#ff8a80;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:17px;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink);text-decoration:underline}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+.hero{padding:50px 0 44px}
+.hero h1{font-size:clamp(44px,9vw,84px);font-weight:800;letter-spacing:-.03em}
+.hero .lead{font-size:clamp(19px,2.6vw,24px);max-width:660px;margin:22px 0 0}
+.hero .meta{margin-top:14px;color:var(--muted);font-size:15px;max-width:660px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:500;font-size:15px;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+section>h2{font-size:30px;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.intro{color:var(--muted);max-width:640px;margin:0 0 26px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px;margin-bottom:24px}
+.project h3{font-size:28px;font-weight:700}
+.status{margin:6px 0 4px;color:var(--muted);font-size:15px}
+.one{font-size:18px;margin:12px 0 18px;max-width:660px}
+dl{margin:0;display:grid;grid-template-columns:140px 1fr;gap:12px 18px}
+dt{font-weight:500;color:var(--muted);font-size:15px}
+dd{margin:0}
+dd ul{margin:0;padding-left:20px}
+dd li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags span{background:var(--tag);padding:3px 11px;border-radius:999px;font-size:13.5px}
+.links{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-weight:500;font-size:15px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.flow div{border-left:3px solid var(--accent);padding:2px 0 2px 14px}
+.flow strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+.flow span{color:var(--muted);font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.pass{color:var(--ok);font-weight:500}
+.fail{color:var(--bad);font-weight:500}
+.scroll{overflow-x:auto}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.cols h3{font-size:19px;margin-bottom:10px}
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin-bottom:8px}
+.about p{max-width:660px;margin:0 0 14px}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media (max-width:700px){
+  body{font-size:16px}
+  dl{grid-template-columns:1fr;gap:2px 0}
+  dt{margin-top:12px}
+  .cols{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Sections">
+    <a href="#work">Projects</a>
+    <a href="#how">How I work</a>
+    <a href="#testing">Testing</a>
+    <a href="#about">About</a>
+    <a href="#background">Background</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Khushbu Bhatia</h1>
+    <p class="lead">I pick a user problem, decide what to build, ship it, and test it. Three products so far, two live.</p>
+    <p class="meta">Full-stack engineer by training, now going into product management. MS in Computer Science, Indiana University Bloomington. Mumbai, open to relocating in India. Looking for Associate Product Manager and entry-level product roles.</p>
+    <div class="cta">
+      <a class="btn primary" href="#work">See my projects</a>
+      <a class="btn ghost" href="mailto:Khushibhatia520@gmail.com">Email me</a>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Projects</h2>
+    <p class="intro">Each project below lists who it is for, what I decided, and what is still weak. I built them with AI coding tools. The product choices and the testing are mine.</p>
+
+    <article class="project">
+      <h3>Verity</h3>
+      <p class="status">AI fact-checker. Live. Built Feb 2026.</p>
+      <p class="one">Paste a claim, get a verdict backed by recent news articles.</p>
+      <dl>
+        <dt>Who it is for</dt><dd>Anyone who sees a claim online and wants a quick check before sharing it.</dd>
+        <dt>Problem</dt><dd>Checking a claim by hand means opening many tabs and comparing sources.</dd>
+        <dt>What I built</dt><dd>A multi-stage AI pipeline. It searches recent news with GNews, reads the articles, and returns a verdict with a short summary. A later stage validates the answer before it is shown.</dd>
+        <dt>Decisions I made</dt>
+        <dd><ul>
+          <li>Verity only checks claims against recent news, not general facts. This keeps each verdict tied to articles you can read.</li>
+          <li>When the browser blocked requests in production (a CORS error), I built a proxy server instead of dropping the news source.</li>
+          <li>When Groq retired the AI model the app used, analysis stopped working. I switched models and the app returned to normal.</li>
+        </ul></dd>
+        <dt>Known limits</dt><dd>It cannot check claims that have no recent news coverage. In my testing, one real headline returned "No articles found". I have not confirmed the cause yet.</dd>
+      </dl>
+      <div class="tags"><span>React</span><span>JavaScript</span><span>Groq</span><span>GNews API</span><span>Vercel</span></div>
+      <div class="links"><a href="https://verity-fact-checker.vercel.app" target="_blank" rel="noopener">Open live app</a></div>
+    </article>
+
+    <article class="project">
+      <h3>RentFlag</h3>
+      <p class="status">Rental listing analyzer. Live. Apr to May 2026.</p>
+      <p class="one">Paste a rental listing and see what to question before you reply or visit.</p>
+      <dl>
+        <dt>Who it is for</dt><dd>Renters who read many listings and miss warning signs.</dd>
+        <dt>Problem</dt><dd>Listings are written to sell. Renters usually spot problems only after they visit.</dd>
+        <dt>What I built</dt><dd>A web app that sends the listing text to an AI model and returns the flags in plain language.</dd>
+        <dt>Decisions I made</dt>
+        <dd><ul>
+          <li>No database and no sign-up. You paste text and get an answer.</li>
+          <li>The AI step works with either Groq or OpenAI, so the app does not depend on one provider.</li>
+        </ul></dd>
+        <dt>Known limits</dt><dd>It reads only the text you paste. It cannot check the real property, the landlord, or the photos.</dd>
+      </dl>
+      <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Groq / OpenAI</span><span>Vercel</span></div>
+      <div class="links"><a href="https://rentflag.vercel.app" target="_blank" rel="noopener">Open live app</a></div>
+    </article>
+
+    <article class="project">
+      <h3>TaskFlow</h3>
+      <p class="status">Real-time Kanban board. Built, not launched. Started Mar 2026.</p>
+      <p class="one">A task board where changes show up for everyone at once.</p>
+      <dl>
+        <dt>Who it is for</dt><dd>Small teams that want a simple board without the weight of a large tool.</dd>
+        <dt>What I built</dt><dd>A board with columns and cards, live updates, and a separate frontend and backend, with MongoDB for data.</dd>
+        <dt>Decisions I made</dt>
+        <dd><ul>
+          <li>Drag and drop was hard to use on phones, so on mobile you tap a card to move it.</li>
+          <li>I refined the design over several rounds toward a clean look, close to Linear and Notion.</li>
+        </ul></dd>
+        <dt>Known limits</dt><dd>It is not deployed yet, so there is no live link. The code is public.</dd>
+      </dl>
+      <div class="tags"><span>MongoDB</span><span>Real-time updates</span><span>Mobile-first fixes</span></div>
+      <div class="links">
+        <a href="https://github.com/khushbubhatia/taskflow-frontend" target="_blank" rel="noopener">Frontend code</a>
+        <a href="https://github.com/khushbubhatia/taskflow-backend" target="_blank" rel="noopener">Backend code</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="how">
+    <h2>How I work</h2>
+    <p class="intro">The same four steps on every project.</p>
+    <div class="flow">
+      <div><strong>Frame</strong><span>Name the user and the problem in one sentence.</span></div>
+      <div><strong>Scope</strong><span>Cut to the smallest version that solves it.</span></div>
+      <div><strong>Ship</strong><span>Build with AI coding tools and deploy so people can use it.</span></div>
+      <div><strong>Test</strong><span>Write test cases, run the high priority ones, fix what breaks.</span></div>
+    </div>
+  </section>
+
+  <section id="testing">
+    <h2>Testing</h2>
+    <p class="intro">Manual test cases for Verity and RentFlag, ranked by priority. I am running the high priority ones first. This is a running log, not a finished report.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Product</th><th>Passed</th><th>Failed</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Verity</td><td class="pass">V-02, V-03, V-04, V-05, V-13</td><td class="fail">V-01</td><td>V-01: a real headline returned "No articles found". Cause not confirmed.</td></tr>
+        <tr><td>RentFlag</td><td class="pass">RF-01, RF-02, RF-03, RF-10, RF-14</td><td>None so far</td><td>More cases still to run.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>I trained as a full-stack engineer and I am moving into product. I care about the early questions: who has the problem, what is the smallest thing that solves it, and how will I know it works.</p>
+    <p>I build with AI coding tools, mainly Claude Code and Cursor, and I say so openly. My value is in choosing the problem, shaping the product, testing it, and shipping it.</p>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <div class="cols">
+      <div>
+        <h3>Experience</h3>
+        <ul class="plain">
+          <li><strong>Volunteer, Heartland Community Network</strong><br>Jul 2025 to Jul 2026. Built 2 web applications.</li>
+        </ul>
+        <h3 style="margin-top:22px">Education</h3>
+        <ul class="plain">
+          <li>MS in Computer Science, Indiana University Bloomington</li>
+          <li>BE, University of Mumbai</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Credentials</h3>
+        <ul class="plain">
+          <li>Smart India Hackathon 2022, winner</li>
+          <li>Patent filed: blockchain-based counterfeit detection</li>
+          <li>CFA Institute Investment Foundations certificate</li>
+          <li>In progress: Google Project Management and IBM Product Manager courses</li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="margin:30px 0 10px;font-size:19px">Skills</h3>
+    <ul class="plain">
+      <li><strong>Used in my projects:</strong> React, Next.js, TypeScript, Tailwind CSS, MongoDB, Vercel, GitHub, Claude Code, Cursor</li>
+      <li><strong>Product work:</strong> user problem framing, scoping, manual test cases, bug reports, prioritising by risk</li>
+      <li><strong>Working knowledge from coursework:</strong> SQL, Python, Figma, Jira, Tableau</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="plain" style="list-style:none;padding:0">
+      <li><a href="mailto:Khushibhatia520@gmail.com">Khushibhatia520@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/khushbu-bhatia" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/khushbubhatia" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Khushbu Bhatia</footer>
+</div>
+</body>
+</html>
